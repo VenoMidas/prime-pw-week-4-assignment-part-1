@@ -78,16 +78,40 @@ console.log('Multiply three numbers arrow 2 * 3 * 4 =', multiplyThreeArrow(2,3,4
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
+  } else {
+    return false;
   }
-    return;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'isPositive Declaration - should say true', isPositive(3) );
+console.log( 'isPositive Declaration - should say false', isPositive(0) );
+console.log( 'isPositive Declaration - should say false', isPositive(-3) );
 
+const isPositiveExpression = function(number) {
+  if ( number > 0 ){
+    return true;
+  } else {
+    return false;
+  } 
+}
+
+console.log( 'isPositive Expression - should say true', isPositiveExpression(3) );
+console.log( 'isPositive Expression - should say false', isPositiveExpression(0) );
+console.log( 'isPositive Expression - should say false', isPositiveExpression(-3) );
+
+const isPositiveArrow = (number) => {
+  if (number > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log( 'isPositive Arrow - should say true', isPositiveArrow(3) );
+console.log( 'isPositive Arrow - should say false', isPositiveArrow(0) );
+console.log( 'isPositive Arrow - should say false', isPositiveArrow(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
