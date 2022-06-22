@@ -31,6 +31,15 @@ function helloName( name ) {
 // Remember to call the function to test
 helloName('Mark');
 
+const helloNameExpression = function(name) {
+  console.log('Expression Greetings', name + '!');
+}
+
+helloNameExpression('Mark');
+
+const helloNameArrow = (name) => console.log('Arrow Greetings', name + '!');
+
+helloNameArrow('Mark');
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
