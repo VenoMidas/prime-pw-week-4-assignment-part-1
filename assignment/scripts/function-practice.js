@@ -215,8 +215,19 @@ console.log('Sum of the array from number seven =', sumAll(arrayForNumberSeven))
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+const arrayForNumberTen = [-1, 2, -3, 4, -5, 6, -7, 0];
 
+function sortPositive(array) {
+  let positiveNumberArray = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > 0)
+    positiveNumberArray.unshift(array[i]);
+  }
+  return positiveNumberArray;
+}
 
+console.log('This is the number array for number 10:', arrayForNumberTen);
+console.log('This is the positive numbers from the array for number 10:', sortPositive(arrayForNumberTen));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
