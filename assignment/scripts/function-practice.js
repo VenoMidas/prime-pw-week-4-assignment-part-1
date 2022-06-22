@@ -116,8 +116,26 @@ console.log( 'isPositive Arrow - should say false', isPositiveArrow(-3) );
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast( array ) {
-
+  return array[array.length - 1];
 }
+const emptyArrayForNumberSix = [];
+const arrayForNumberSix = ['this', 'or', 'that'];
+console.log('Empty array for number six:', emptyArrayForNumberSix);
+console.log('Array for number six:', arrayForNumberSix);
+console.log('Declaration - The last item in the array is:', getLast(arrayForNumberSix));
+console.log('Declaration - The last item in this empty array is:', getLast(emptyArrayForNumberSix));
+
+const getLastExpression = function(array){
+  return array[array.length - 1];
+}
+
+console.log('Expression - The last item in the array is:', getLastExpression(arrayForNumberSix));
+console.log('Expression - The last item in this empty array is:', getLastExpression(emptyArrayForNumberSix));
+
+const getLastArrow = (array) => array[array.length - 1];
+
+console.log('Arrow - The last item in the array is:', getLastArrow(arrayForNumberSix));
+console.log('Arrow - The last item in this empty array is:', getLastArrow(emptyArrayForNumberSix));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
