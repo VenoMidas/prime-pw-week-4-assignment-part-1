@@ -141,8 +141,45 @@ console.log('Arrow - The last item in this empty array is:', getLastArrow(emptyA
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  let result = false;
+  for(let i = 0; i < array.length; i++) {
+    if (value === array[i]) {
+      result = true;
+    }
+  }
+  return result;
 }
+const arrayForNumberSeven = [1, 2, 3, 4, 5];
+console.log('This is the array for number seven:', arrayForNumberSeven);
+console.log('Declaration - 3 is in the array!', find(3, arrayForNumberSeven));
+console.log('Declaration - 6 is in the array!', find(6, arrayForNumberSeven));
+
+const findExpression = function(value, array) {
+  let result = false;
+  for(let i = 0; i < array.length; i++) {
+    if (value === array[i]) {
+      result = true;
+    }
+  }
+  return result;
+}
+
+console.log('Expression - 3 is in the array!', findExpression(3, arrayForNumberSeven));
+console.log('Expression - 6 is in the array!', findExpression(6, arrayForNumberSeven));
+
+const findArrow = (value, array) => {
+  let result = false;
+  for(let i = 0; i < array.length; i++) {
+    if (value === array[i]) {
+      result = true;
+    }
+  }
+  return result;
+}
+
+console.log('Arrow - 3 is in the array!', findArrow(3, arrayForNumberSeven));
+console.log('Arrow - 6 is in the array!', findArrow(6, arrayForNumberSeven));
+
 
 // ----------------------
 // Stretch Goals
