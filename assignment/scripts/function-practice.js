@@ -180,17 +180,26 @@ const findArrow = (value, array) => {
 console.log('Arrow - 3 is in the array!', findArrow(3, arrayForNumberSeven));
 console.log('Arrow - 6 is in the array!', findArrow(6, arrayForNumberSeven));
 
-
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if (string[0] === letter) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+
+const isFirstLetterArrow = (letter, string) => string[0] === letter ? true : false;
+
+console.log( 'isFirstLetterArrow - should say true', isFirstLetterArrow('a', 'apple') );
+console.log( 'isFirstLetterArrow - should say false', isFirstLetterArrow('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
