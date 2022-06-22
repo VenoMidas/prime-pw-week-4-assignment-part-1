@@ -202,11 +202,15 @@ console.log( 'isFirstLetterArrow - should say true', isFirstLetterArrow('a', 'ap
 console.log( 'isFirstLetterArrow - should say false', isFirstLetterArrow('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+function sumAll(array) {
   let sum = 0
-  // TODO: loop to add items
+  for (i = 0; i < array.length; i++){
+    sum += array[i];
+  }
   return sum;
 }
+
+console.log('Sum of the array from number seven =', sumAll(arrayForNumberSeven));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
