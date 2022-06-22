@@ -232,3 +232,26 @@ console.log('This is the positive numbers from the array for number 10:', sortPo
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Implement a function which convert the given boolean value into its string representation.
+
+function booleanToString(b){
+  if (b === true){
+    return 'true';
+  } else {
+    return 'false';
+  }
+}
+
+// or
+
+const booleanToStringArrow = b => b === true ? 'true' : 'false';
+
+let booleanTrue = true;
+let booleanFalse = false;
+
+console.log('Boolean to string function declaration true:', booleanToString(booleanTrue));
+console.log('Boolean to string function declaration false:', booleanToString(booleanFalse));
+console.log('Boolean to string arrow function true:', booleanToStringArrow(booleanTrue));
+console.log('Boolean to string arrow function false:', booleanToStringArrow(booleanFalse));
+
