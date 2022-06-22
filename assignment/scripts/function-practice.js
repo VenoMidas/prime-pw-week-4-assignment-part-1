@@ -58,10 +58,21 @@ const addNumbersArrow = (x,y) => x + y;
 console.log('Add numbers arrow 2 and 3 =', addNumbersArrow(2,3));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(x,y,z){
+  return x * y * z;
 }
 
+console.log('Multiply three numbers declaration 2 * 3 * 4 =', multiplyThree(2,3,4));
+
+const multiplyThreeExpression = function(x,y,z) {
+  return x * y * z;
+}
+
+console.log('Multiply three numbers expression 2 * 3 * 4 =', multiplyThreeExpression(2,3,4));
+
+const multiplyThreeArrow = (x,y,z) => x * y * z;
+
+console.log('Multiply three numbers arrow 2 * 3 * 4 =', multiplyThreeArrow(2,3,4));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
