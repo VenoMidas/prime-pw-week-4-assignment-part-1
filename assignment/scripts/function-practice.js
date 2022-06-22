@@ -11,6 +11,16 @@ function hello() {
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
+const helloExpression = function() {
+  console.log('Hello World as a function expression!');
+}
+
+helloExpression();
+
+const helloArrow = () => console.log("Hello World as an arrow function!");
+
+helloArrow();
+
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
