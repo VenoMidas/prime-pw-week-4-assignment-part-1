@@ -12,40 +12,50 @@ function hello() {
 console.log('Test - should say "Hello World!"', hello());
 
 const helloExpression = function() {
-  console.log('Hello World as a function expression!');
+  return 'Hello World as a function expression!';
 }
 
-helloExpression();
+console.log(helloExpression());
 
-const helloArrow = () => console.log("Hello World as an arrow function!");
+const helloArrow = () => "Hello World as an arrow function!";
 
-helloArrow();
-
+console.log(helloArrow());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  console.log('Greetings', name + '!');
-  return;
+  return 'Greetings declaration ' + name + '!';
 }
+
 // Remember to call the function to test
-helloName('Mark');
+console.log(helloName('Mark'));
 
 const helloNameExpression = function(name) {
-  console.log('Expression Greetings', name + '!');
+  return 'Greetings expression ' + name + '!';
 }
 
-helloNameExpression('Mark');
+console.log(helloNameExpression('Mark'));
 
-const helloNameArrow = (name) => console.log('Arrow Greetings', name + '!');
+const helloNameArrow = (name) => 'Greetings arrow ' + name + '!';
 
-helloNameArrow('Mark');
+console.log(helloNameArrow('Mark'));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+function addNumbers( firstNumber, secondNumber ) {
+  return firstNumber + secondNumber;
 }
 
+console.log('Add numbers declaration 2 and 3 =', addNumbers(2,3));
+
+const addNumbersExpression = function(x,y) {
+  return x + y;
+}
+
+console.log('Add numbers expression 2 and 3 =', addNumbersExpression(2,3));
+
+const addNumbersArrow = (x,y) => x + y;
+
+console.log('Add numbers arrow 2 and 3 =', addNumbersArrow(2,3));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
