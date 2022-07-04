@@ -266,7 +266,7 @@ console.log( 'isFirstLetterArrow - should say false', isFirstLetterArrow('z', 'a
  */
 function sumAll(array) {
   let sum = 0
-  for (i = 0; i < array.length; i++){
+  for (let i = 0; i < array.length; i++){
     sum += array[i];
   }
   return sum;
@@ -288,7 +288,7 @@ const arrayForNumberTen = [-1, 2, -3, 4, -5, 6, -7, 0];
  */
 function sortPositive(array) {
   let positiveNumberArray = [];
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > 0)
     positiveNumberArray.unshift(array[i]);
   }
